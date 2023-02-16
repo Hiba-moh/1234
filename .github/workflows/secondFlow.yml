@@ -4,9 +4,15 @@ jobs:
   First-job:
     runs-on: ubuntu-latest
     steps:
-      - name: first steps
+      - name: first step
         run: echo "hello there"
       - name: run-commands
         run: |
           npm -v
           node -v
+  BashCommand:
+    runs-on: windows-latest
+    steps:
+      - name: first-bash-BashCommand
+        run: pwd
+        shell: cmd
