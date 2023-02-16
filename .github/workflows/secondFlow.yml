@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: first steps
         run: echo "hello there"
+      - name: run-commands
+        run: |
+          npm -v
+          node -v
