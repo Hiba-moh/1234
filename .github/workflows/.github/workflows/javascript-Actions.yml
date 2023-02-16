@@ -1,0 +1,11 @@
+name: Js-script actions
+on: [push]
+jobs:
+  Js-script-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-js-action
+        uses: Hiba-moh/JavaScriptAction@v1
+        with:
+          who-to-greet: Hiba
+          
