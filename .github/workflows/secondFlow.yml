@@ -12,6 +12,7 @@ jobs:
           node -v
   BashCommand:
     runs-on: windows-latest
+    needs: [First-job]
     steps:
       - name: first-bash-BashCommand
         run: pwd
