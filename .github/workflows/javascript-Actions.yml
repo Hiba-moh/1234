@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first-js-action
+        id: unique
         uses: Hiba-moh/JavaScriptAction@v1
         with:
           who-to-greet: Hiba1
+
+      - name: greeting time
+        run: echo "${{steps.unique.outputs.time}}"
